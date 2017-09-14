@@ -1,2 +1,5 @@
-# dockerfiles
-Collection of useful Dockerfiles automatically built and pushed to dockerhub
+# Docker images
+
+Collection of useful Dockerfiles automatically built by dockerhub
+
+https://hub.docker.com/r/dionjwa/dockerfiles/
