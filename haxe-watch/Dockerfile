@@ -1,3 +1,9 @@
+# Description:
+#
+# Package haxe and chokidar-cli in the same image so you can run haxe
+# builds automatically triggered by code changes.
+#
+
 FROM haxe:3.4.2-stretch
 MAINTAINER dion@transition9.com
 
