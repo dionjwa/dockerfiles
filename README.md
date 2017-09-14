@@ -19,3 +19,12 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
 
 
 ```
+### ./livereloadx
+
+```
+ Description:
+
+ Livereload server https://github.com/nitoyon/livereloadx
+
+
+```
