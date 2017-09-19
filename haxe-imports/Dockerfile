@@ -8,3 +8,4 @@ MAINTAINER dion@transition9.com
 
 WORKDIR /app/
 ADD haxe_imports_fix.py /app/haxe_imports_fix.py
+ENTRYPOINT python2 /app/haxe_imports_fix.py
