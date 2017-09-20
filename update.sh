@@ -11,16 +11,20 @@ git commit -m "$1"
 
 if [ $# -eq 2 ]
 then
-	CURRENT_TAG=`git describe --tags`
+	CURRENT_TAG=`git describe --abbrev=0 --tags`
 	BASE_LIST=(`echo $CURRENT_TAG | tr '.' ' '`)
 	echo "$BASE_LIST"
 	V_MAJOR=${BASE_LIST[0]}
 	V_MINOR=${BASE_LIST[1]}
 	V_PATCH=${BASE_LIST[2]}
+	echo "V_MAJOR=$V_MAJOR"
+	echo "V_MINOR=$V_MINOR"
+	echo "V_PATCH=$V_PATCH"
 	V_MINOR=$((V_MINOR + 1))
+	echo "V_MINOR=$V_MINOR"
 	VERSION="$V_MAJOR.$V_MINOR.$V_PATCH"
-	echo "version=$VERSION"
+	echo "git tag $VERSION"
 	git tag "$VERSION"
 fi
 
-git push --tags origin master
+git push --tags origin
