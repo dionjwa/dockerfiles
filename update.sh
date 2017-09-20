@@ -13,6 +13,7 @@ if [ $# -eq 2 ]
 then
 	CURRENT_TAG=`git describe --tags`
 	BASE_LIST=(`echo $CURRENT_TAG | tr '.' ' '`)
+	echo "$BASE_LIST"
 	V_MAJOR=${BASE_LIST[0]}
 	V_MINOR=${BASE_LIST[1]}
 	V_PATCH=${BASE_LIST[2]}
