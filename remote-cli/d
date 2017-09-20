@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+DOCKERIMAGE="$1"
+shift 1
+# docker pull $DOCKERIMAGE
+docker run --rm -ti -v $PWD:/scratch -w /scratch $DOCKERIMAGE "$@"

@@ -421,6 +421,8 @@ if __name__ == "__main__":
 	dryrun = args.dryrun
 	if dryrun:
 		print('DRYRUN: not modifying any files')
+	if args.verbose:
+		print(args)
 	srcs = recursivelyGatherHaxeSourcePaths(args.hxml)
 	if args.src:
 		for s in args.src:
