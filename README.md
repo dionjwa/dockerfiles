@@ -23,8 +23,13 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
 ```
  Description:
 
- Package haxe and chokidar-cli+nodemon in the same image so you can run haxe
- builds automatically triggered by code changes, and then run the server
+ Package haxe and some useful nodejs build utils such as
+  - chokidar-cli
+  - nodemon
+  - webpack
+  - browserify
+ in the same image so you can run haxe builds automatically triggered
+ by code changes, and then run the server
 
 
 ```
