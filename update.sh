@@ -19,7 +19,7 @@ then
 	V_MINOR=$((V_MINOR + 1))
 	VERSION="$V_MAJOR.$V_MINOR.$V_PATCH"
 	echo "version=$VERSION"
-	git tag $VERSION
+	# git tag $VERSION
 fi
 
-git push --tags origin master
+# git push --tags origin master
