@@ -11,3 +11,4 @@ RUN apk add --no-cache make gcc g++ python linux-headers udev && \
 	apk del make gcc g++ python linux-headers udev
 
 EXPOSE 35729
+
