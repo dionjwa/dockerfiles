@@ -31,6 +31,7 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
  in the same image so you can run haxe builds automatically triggered
  by code changes, and then run the server
 
+Sometimes you want a port exposed (e.g. for reverse docker nginx proxying)
 
 ```
 ### ./livereloadx
@@ -39,6 +40,17 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
  Description:
 
  Livereload server https://github.com/nitoyon/livereloadx
+
+
+```
+### ./node_modules
+
+```
+ Description:
+
+ Docker image for just installing npm modules. Use this
+ to create a docker volume with your npm modules that
+ you can mount elsewhere
 
 
 ```
