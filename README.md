@@ -9,12 +9,24 @@ Below is the overview generated from the Dockerfiles in the subdirectories.
 Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
 
 
+### ./aws-lambda-builder
+
+```
+ Description:
+
+ To build aws nodejs lambdas you need a build environment
+ package up the scripts
+
+
+```
 ### ./haxe-imports
 
 ```
  Description:
 
  Python script to fix/add haxe imports and package statements.
+ Usage:
+   docker --rm -ti -v $PWD:/haxe dionjwa/haxe-imports
 
 
 ```
