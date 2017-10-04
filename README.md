@@ -19,6 +19,11 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
  to AWS. This image provides an AWS linux environment
  for this task.
 
+ Usage:
+ (Assumes the nodejs source and package.json is in the ./src folder and
+  the artifacts should go in the ./destination folder)
+ docker run --rm -ti -v $PWD/src:/src -v $PWD/src:/destination -w /src dionjwa/aws-lambda-builder -s /src -d /destination
+
 
 ```
 ### ./haxe-imports
