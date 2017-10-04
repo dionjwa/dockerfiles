@@ -15,7 +15,9 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
  Description:
 
  To build aws nodejs lambdas you need a build environment
- package up the scripts
+ to package up the scripts in a zip file for uploading
+ to AWS. This image provides an AWS linux environment
+ for this task.
 
 
 ```
