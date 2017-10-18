@@ -33,7 +33,7 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
 
  Python script to fix/add haxe imports and package statements.
  Usage:
-   docker --rm -ti -v $PWD:/haxe dionjwa/haxe-imports
+   docker run --rm -ti -v $PWD:/haxe dionjwa/haxe-imports
 
 
 ```

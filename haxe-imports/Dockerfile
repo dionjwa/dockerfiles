@@ -2,7 +2,7 @@
 #
 # Python script to fix/add haxe imports and package statements.
 # Usage:
-#   docker --rm -ti -v $PWD:/haxe dionjwa/haxe-imports
+#   docker run --rm -ti -v $PWD:/haxe dionjwa/haxe-imports
 #
 
 FROM python:2.7.14-alpine3.6
