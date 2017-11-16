@@ -6,8 +6,9 @@ if [ $# -eq 0 ]; then
     echo "    The packager runs in an AWS Linux docker container, so the node "
     echo "    modules are compiled for the correct architecture."
     echo ""
-    echo "    -s/--src            The source folder of the lambda script"
-    echo "    -d/--destination    The destination folder for the lambda zip file"
+    echo "    -s/--src            source folder of the lambda script"
+    echo "    -d/--destination    destination folder for the lambda zip file"
+    echo "    -n/--name           [optional] name of the zip file. If not provided, uses <package.json.name>-<package.json.version>.zip"
     echo ""
     exit 0
 fi
@@ -31,6 +32,10 @@ case $key in
     DESTINATION="$2"
     shift # past argument
     ;;
+    -n|--name)
+    NAME="$2"
+    shift # past argument
+    ;;
     *)
             # unknown option
     ;;
@@ -46,8 +51,13 @@ if [ ! -f package.json ]; then
 	echo "Cannot create lambda package, 'package.json' file not found!"
 	exit 1
 fi
+npm install || exit 1
+
 VERSION=`cat package.json | jq -r '. .version'`
 LAMBDA_NAME=`cat package.json | jq -r '. .name'`
-FILENAME=lambda-$LAMBDA_NAME-$VERSION.zip
-npm install || exit 1
+FILENAME=$LAMBDA_NAME-$VERSION.zip
+if [ -n "$NAME" ] ; then
+    FILENAME=$NAME.zip
+fi
+
 zip -r /destination/$FILENAME . || exit 1
