@@ -1,0 +1,33 @@
+Version 0.1.0
+ - Better aws lambda building script
+ - Fix haxe import doc
+ - Added script for actual packaging lambdas
+ - aws lambda docs
+ - Added aws-lambda-builder image for building AWS lambdas
+ - Fix haxe-imports and add more docs
+ - Added EXPOSE
+ - Added EXPOSE
+ - node_modules image
+ - Tagging
+ - Tagging
+ - Optional version bumping2
+ - Optional version bumping2
+ - Optional version bumping2
+ - Optional version bumping2
+ - Optional version bumping
+ - Add additional npm global installs
+ - Improve haxe-watch
+ - Add entrypoint
+ - Added haxe-import
+ - Added missing EXPOSE
+ - Fixed livereloadx build
+ - Add livereloadx
+ - Add rsync
+ - Fix haxe-watch
+ - Add whitespace
+ - Added build scripts
+ - Readme update
+ - Update README
+ - haxe 3.4.2
+ - Initial commit
+
