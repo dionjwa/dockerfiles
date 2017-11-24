@@ -1,3 +1,12 @@
+Version 0.8.0:
+ - Added VERSION and CHANGES files, Version bump to v0.1.0
+ - Better aws lambda building script
+ - Fix haxe import doc
+ - Added script for actual packaging lambdas
+ - aws lambda docs
+ - Added aws-lambda-builder image for building AWS lambdas
+ - Fix haxe-imports and add more docs
+
 Version 0.1.0
  - Better aws lambda building script
  - Fix haxe import doc
