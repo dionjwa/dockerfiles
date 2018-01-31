@@ -15,7 +15,7 @@ MAINTAINER dion@transition9.com
 ENV SHELL=/bin/bash
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
-		apt-get install -y nodejs rsync && \
+		apt-get install -y nodejs rsync jq curl && \
 		npm install -g chokidar-cli nodemon webpack browserify && \
 		rm -rf /var/lib/apt/lists/*
 
