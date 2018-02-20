@@ -9,7 +9,7 @@
 # by code changes, and then run the server
 #
 
-FROM haxe:3.4.2-stretch
+FROM haxe:3.4.4-stretch
 MAINTAINER dion@transition9.com
 
 ENV SHELL=/bin/bash
