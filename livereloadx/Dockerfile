@@ -3,12 +3,12 @@
 # Livereload server https://github.com/nitoyon/livereloadx
 #
 
-FROM node:6.11-alpine
+FROM node:8
 MAINTAINER dion@transition9.com
 
-RUN apk add --no-cache make gcc g++ python linux-headers udev && \
-	npm install -g livereloadx && \
-	apk del make gcc g++ python linux-headers udev
+RUN	apt-get install -y make g++ gcc python && \
+		npm install -g livereloadx && \
+		rm -rf /var/lib/apt/lists/*
 
 EXPOSE 35729
 
