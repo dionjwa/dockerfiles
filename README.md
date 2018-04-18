@@ -26,6 +26,17 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
 
 
 ```
+### ./fluent-probe
+
+```
+ Description:
+
+ Minimal docker image for testing a connection to a fluent collecter.
+ Usage:
+ docker run --rm dionjwa/fluent-probe -h <FLUENT_HOST> -p <FLUENT_PORT> <fluent payload>
+
+
+```
 ### ./haxe-imports
 
 ```
