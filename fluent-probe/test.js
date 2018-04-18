@@ -18,10 +18,7 @@ var host = program.host;
 
 console.log('Host=%s port=%s', program.host, program.port);
 
-var logger = require('fluent-logger')
-
-// The 2nd argument can be omitted. Here is a default value for options.
-logger.configure('tag_prefix', {
+var logger = require('fluent-logger').createFluentSender(program.label, {
    host: program.host,
    port: program.port,
    timeout: 3.0,
@@ -41,5 +38,6 @@ if (!payload) {
 
 // send an event record with 'tag.label'
 logger.emit(program.host, payload, function() {
-	logger.close();
+  console.log("Sent: " + program.label + " " + program.args);
+	process.exit(0);
 });
