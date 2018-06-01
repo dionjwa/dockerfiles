@@ -16,10 +16,6 @@ ENV SHELL=/bin/bash
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 		apt-get install -y nodejs rsync jq curl make g++ gcc && \
-		npm install -g chokidar-cli nodemon webpack browserify && \
+		npm install -g chokidar-cli nodemon webpack-cli browserify && \
 		rm -rf /var/lib/apt/lists/*
 
-
-#Sometimes you want a port exposed (e.g. for reverse docker nginx proxying)
-EXPOSE 9000
-ENV PORT 9000
