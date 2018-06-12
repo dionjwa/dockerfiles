@@ -72,3 +72,14 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
 
 
 ```
+### ./node_modules
+
+```
+ Description:
+
+ Docker image for just installing npm modules. Use this
+ to create a docker volume with your npm modules that
+ you can mount elsewhere
+
+
+```

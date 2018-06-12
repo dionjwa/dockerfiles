@@ -16,6 +16,6 @@ ENV SHELL=/bin/bash
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 		apt-get install -y nodejs rsync jq curl make g++ gcc && \
-		npm install -g chokidar-cli nodemon webpack-cli browserify && \
+		npm install -g chokidar-cli nodemon webpack-cli webpack browserify && \
 		rm -rf /var/lib/apt/lists/*
 
