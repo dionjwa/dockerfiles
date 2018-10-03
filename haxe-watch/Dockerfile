@@ -9,13 +9,13 @@
 # by code changes, and then run the server
 #
 
-FROM haxe:3.4.4-stretch
+FROM haxe:3.4.7-stretch
 MAINTAINER dion@transition9.com
 
 ENV SHELL=/bin/bash
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 		apt-get install -y nodejs rsync jq curl make g++ gcc && \
-		npm install -g chokidar-cli nodemon webpack-cli webpack browserify && \
+		npm install -g chokidar-cli nodemon webpack-cli webpack webpack browserify && \
 		rm -rf /var/lib/apt/lists/*
 
