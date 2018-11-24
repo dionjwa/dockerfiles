@@ -72,14 +72,16 @@ Credit to https://github.com/cdrage/dockerfiles for the layout and scripts.
 
 
 ```
-### ./node_modules
+### ./make
 
 ```
  Description:
 
- Docker image for just installing npm modules. Use this
- to create a docker volume with your npm modules that
- you can mount elsewhere
+ Base alpine image for running make+docker build tasks
+ Designed to provide the base image for all makefile
+ commands so that you can provide a clean reproducible
+ build environment on any system
 
+ alpine 3.8
 
 ```
